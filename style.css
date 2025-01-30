@@ -1,0 +1,163 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "poppin",sans-serif;
+}
+
+.wrapper{
+height: 100vh;
+width: 100%;
+display: flex;
+
+justify-content: center;
+align-items: center;
+background: url(rose.jpg) no-repeat;
+background-size: cover;
+}
+.cal{
+background:rgba(0,0,0,0.6);
+border-radius: 1rem;
+padding: 2rem;
+border:1px solid white;
+box-shadow:8px 8px 15px rgb(20, 0, 0);
+
+}
+
+ .cal form input{
+outline:none;
+border:1px solid white;
+width: 50px;
+cursor: pointer;
+height: 40px;
+margin: 8px;
+background-color: transparent;
+color: white;
+border-radius:10px;
+
+
+}
+h1{
+color: white;
+font-size: 12px;
+font-weight: 100;
+
+}
+form .Display{
+display: flex;
+height: 80px;
+justify-content: flex-end;
+margin: 20px 0;
+
+
+
+}
+form .Display input{
+font-size: 40px;
+height: 70px;
+flex: 1;
+ text-align: right;
+ padding-right: 10px;
+
+}
+form input.equal{
+width: 125px;
+}
+
+form input.oprater{
+    font-size:20px;
+    color:chocolate;
+}
+ form input{
+    font-size: 20px;
+
+ 
+}
+.navbar{
+    padding: 1rem 1.5rem;
+    color: white;
+    display:flex;
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted white;
+    width: 100%;
+    gap: 50px;
+
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between ;
+    gap :20px;
+}
+.heading h1{
+    transition: all .3s linear;
+font-size: 30px;
+border: 1px solid white;
+text-align: center;
+font-weight: 700;
+    color: rgb(247, 5, 186);
+margin-left: px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+h1:hover{
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar li{
+    margin: auto;
+ position: relative;
+ gap:2rem;
+ text-transform: uppercase;
+     display: flex;
+ 
+     text-decoration: none;
+     list-style: none;
+ font-size: 1rem;
+ font-weight: 600;
+
+}
+.navbar li::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -.2rem;
+    border-bottom: 1px solid rgb(234, 0, 255);
+    width: 0%;
+    transition: all .3s linear;
+}
+.navbar li:hover:after{
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(243, 5, 207);
+
+}
+ .heading h1::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: 0;
+
+    border-bottom: 1px solid rgb(249, 246, 250);
+    width: 0%;
+    transition: all .3s linear;
+}
+ .heading h1:hover:after{
+    width: 100%;
+    cursor: pointer;
+    color:pink;
+    border-bottom: 1px solid rgb(243, 5, 207);
+}
+
+.copy{
+color:rgba(255, 255, 255, .5);
+    margin: 1px 10px 50px 2px;
+
+}
